@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-22T14:21:43 IST" name="Suite" finished-at="2025-11-22T14:21:43 IST" duration-ms="80">
+    <groups>
+      <group name="logout">
+        <method signature="Depends.logout()[pri:0, instance:demo.Depends@3835c46]" name="logout" class="demo.Depends"/>
+      </group> <!-- logout -->
+      <group name="viewAccount">
+        <method signature="Depends.viewAccount()[pri:0, instance:demo.Depends@3835c46]" name="viewAccount" class="demo.Depends"/>
+      </group> <!-- viewAccount -->
+      <group name="login">
+        <method signature="Depends.login()[pri:0, instance:demo.Depends@3835c46]" name="login" class="demo.Depends"/>
+      </group> <!-- login -->
+      <group name="openBrowser">
+        <method signature="Depends.openBrowser()[pri:0, instance:demo.Depends@3835c46]" name="openBrowser" class="demo.Depends"/>
+      </group> <!-- openBrowser -->
+    </groups>
+    <test started-at="2025-11-22T14:21:43 IST" name="Test" finished-at="2025-11-22T14:21:43 IST" duration-ms="80">
+      <class name="demo.Depends">
+        <test-method signature="openBrowser()[pri:0, instance:demo.Depends@3835c46]" started-at="2025-11-22T14:21:43 IST" name="openBrowser" finished-at="2025-11-22T14:21:43 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="login()[pri:0, instance:demo.Depends@3835c46]" started-at="2025-11-22T14:21:43 IST" name="login" depends-on-groups="openBrowser" finished-at="2025-11-22T14:21:43 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="viewAccount()[pri:0, instance:demo.Depends@3835c46]" started-at="2025-11-22T14:21:43 IST" name="viewAccount" depends-on-groups="login" finished-at="2025-11-22T14:21:43 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewAccount -->
+        <test-method signature="logout()[pri:0, instance:demo.Depends@3835c46]" started-at="2025-11-22T14:21:43 IST" name="logout" depends-on-groups="viewAccount" finished-at="2025-11-22T14:21:43 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- demo.Depends -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
